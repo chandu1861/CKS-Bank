@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       
+       .reg2
+        {
+            margin-top: 2%;
+            display: flex;
+            /* display: none; */
+        }
+
+        .left1
+        {
+            padding: 15px;
+            margin-left: 40%;
+        }
+
+        .right2
+        {
+            margin-left: 1%;
+        }
+
+        .r1
+        {
+            margin-top: 5%;
+        }
+
+        input
+        {
+            height: 50px;
+            width: 200px;
+        }
+
+        button
+        {
+            margin-top: -10px;
+            font-size: 18px;
+            height: 50px;
+            width: 120px;
+            background-color:orange;
+            border: none;
+            border-radius: 32px;
+            box-shadow: 0px 16px 48px #00000029;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reg2" id="reg2">               
+        <div class="left1">
+            
+            <label>Name</label><br><br><br> 
+            <label>Phone Number*</label> <br><br><br><br>
+            <label>Email*</label><br><br><br><br>
+            <label>Password*</label><br><br><br><br> 
+            <label>Confirm Password*</label><br><br> 
+        </div>
+        <div class="right2">
+            <form id="form">
+                <input type="text" id="username" placeholder="Your Name" required><br><br>
+                <input type="number" id="number" placeholder="Your Phone Number" required><br><br>
+                <input type="email" id="email" placeholder="Your Email address" required><br><br>   
+                <input type="password" id="password" placeholder="password" required><br><br>
+                <input type="password" id="conpass" placeholder="password" required><br><br>
+                <button class="r1">Register</button>
+            </form>
+        </div>
+        <script>
+            let form = document.getElementById('form')
+
+            // if(localStorage.getItem('username') && localStorage.getItem('password'))
+            // {
+            //     document.getElementById('username').value = localStorage.getItem('username')
+            //     document.getElementById('password').value = localStorage.getItem('password')
+
+            //     alert("user already exist")
+            // }
+                 
+                
+            
+            form.addEventListener('submit',(e) => {
+                e.preventDefault()
+
+                let username = document.getElementById('username').value
+                let number = document.getElementById('number').value
+                let email = document.getElementById('email').value
+                let Password = document.getElementById('password').value
+                let conpass = document.getElementById('conpass').value
+
+                localStorage.setItem('username',username)
+                localStorage.setItem('number',number)
+                localStorage.setItem('email',email)+
+                9*63
+                localStorage.setItem('password',Password)
+                localStorage.setItem('conpass',conpass)
+
+
+                username1 = localStorage.getItem('username',username)
+                number1 = localStorage.getItem('number',number)
+                email1 = localStorage.getItem('email',email)
+                Password1 = localStorage.getItem('password',Password)
+                conpass1 = localStorage.getItem('conpass',conpass)
+                // if(username==username && Password==Password)
+                //     {
+                //        document.write("user aldready exist")
+                //     }
+                // alert("Registred successfully!!!")
+                    if("username1" in localStorage)
+                    {
+                        alert('yes');
+                    }
+                    else
+                    {
+                        alert('no');
+                    }
+                
+            })
+
+        </script>
+        </div>
+</body>
+</html>

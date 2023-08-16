@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCS Bank</title>
+    <link rel="stylesheet" href="./Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="main_container">
+        <header>
+        <div class="first">
+            <ol class="head">
+                <li><a href="">Locations</a></li>
+                <li><a href="">Regarding queries</a></li>
+                <input class="search" type="text" placeholder="Search" style="font-size: 20px;"><img src="./search.png" alt="" height="30px" width="30px" style="margin-left: -80px; margin-top: 5px;">
+            </ol>
+        </div>
+        
+            <br>    
+            <div class="K">
+                <div class="k1">
+                    <div class="k2">
+                    </div>
+                </div>
+            </div>
+            <div class="C"></div>
+            <div class="S">
+                <div class="s1"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Personal</a>
+                        <ul class="dropdown">
+                            <div>
+                                <h1>Account types</h1>
+                                <li><a href="./bankdetails.html">Savings</a></li>
+                                <li><a href="#">Fixed deposite</a></li>
+                                <li><a href="#">Joint Account</a></li>
+                                <li><a href="#">Salary Account</a></li>
+                            </div>
+                            <div>
+                                <h1>Loans</h1>
+                                <li><a href="">Personal Loan</a></li>
+                                <li><a href="">Home Loan</a></li>
+                                <li><a href="">Gold Loan</a></li>
+                                <li><a href="">Education Loan</a></li>
+                            </div>
+                            <div>
+                                <h1>Services</h1>
+                                <li><a href="">Self Service centre</a></li>
+                                <li><a href="">Digital Baning</a></li>
+                                <li><a href="">Easy switch kit</a></li>
+                                
+                            </div> 
+                        </ul>
+                    </li>
+                    <li><a href="#">Business</a>
+                        <ul class="dropdown">
+                            <div>
+                                <h1>Account types</h1>
+                                <li><a href="#">current</a></li>
+                                <li><a href="#">recuring deposite</a></li>
+                                <li><a href="#">NRI</a></li>
+                            </div>
+                            <div>
+                                <h1>Loans</h1>
+                                <li><a href="">Start up Loan</a></li>
+                                <li><a href="">Commercial Loan</a></li>
+                                <li><a href="">Real estate Loan</a></li>
+                                <li><a href="">Gold Loan</a></li>
+                            </div>
+                            <div>
+                                <h1>Services</h1>
+                                <li><a href="">Business</a></li>
+                                <li><a href="">Digital Baning</a></li>
+                                <li><a href="">Cash management</a></li>
+                                
+                            </div>
+                        </ul>    
+                    </li>
+                <li><a href="#">About</a>
+                    <ul class="dropdown">
+                        <div>
+                            <h1>About Bank</h1>
+                            <li><a href="#">CEO of bank</a></li>
+                            <li><a href="#">Latest Awards</a></li>
+                            
+                        </div>
+                        <div>
+                            <h1>Contact</h1>
+                            <li><a href="">Locations</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Holidays & Closing schedules</a></li>
+                            <li><a href="">Education Loan</a></li>
+                        </div>
+                        <div>
+                            <h1>Career cengter life at KCS</h1>
+                        </div>
+                    </ul> 
+                </li>
+                <br><br>
+                <a href="./login.html"><button>Login</button></a>
+                <div class="reg">
+                    <a href="./regster.html"><button>Register</button></a>
+                </div>
+                
+                </ul>
+            </nav>
+        </header>
+        
+        
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    
+                    <div class="slide">
+                        <img src="./photo1.jpg" alt="" height="680px" width="1600px">
+                    </div>
+                    <div class="slide1">
+                        <img src="./photo2.jpg" alt="" height="680px" width="1600px">
+                    </div>
+                    <div class="slide2">
+                        <img src="./photo3.jpeg" alt="" height="680px" width="1600px">
+                    </div>
+                    <div class="slide3">
+                        <img src="./photo4.jpg" alt="" height="680px" width="1600px">
+                    </div>
+        
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+        
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+        
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function()
+                    {
+                        document.getElementById('radio'+counter).checked = true;
+                        counter++;
+                        if(counter > 4)
+                        {
+                            counter = 1;
+                            
+                        }   
+                    },5000);
+                </script>
+            </div>
+
+            <br>
+            <h2>HAVE A QUESTION OR NEED ADVICE? WE'LL GET BACK TO YOU QUICKLY</h2><br>
+            <h3>Fill out the form below and we'll get back to you as soon as we can</h3><br><br>
+            <div class="form">
+                
+                <div class="left">
+                    <form>
+                    <label>Name*</label><br><br> 
+                    <input type="text" placeholder="Your Name" required><br><br>
+                    
+                    <label>Phone Number* </label> <br><br>
+                    <input type="number" placeholder="Your Phone Number" required><br><br>
+    
+                    <label>Prefered Branch*</label><br><br>
+                    <input type="number" required><br><br>
+                    
+                    <label>Your Message* </label>
+                    <br><br><textarea name="Type your message here" placeholder="Type your message here" cols="20" rows="9" required></textarea><br><br>
+                    </form>
+                </div>
+                <div class="right">
+                    <form>
+                        <label>Email*</label><br><br>
+                        <input type="email" placeholder="Your Email address" required><br><br>   
+                        <label>Business  </label><br><br>
+                        <input type="text" placeholder="Your Business name (optional)"><br><br>
+    
+                        <button class="submit">SUBMIT MESSAGE</button>
+                    </form>
+                </div>
+                </div>
+                <br>
+                <footer>
+                    <div class="working">
+                        <h4>Working hours</h4>
+                        <p class="wk">
+                            Mon-Sat: 10-5pm
+                            <br><br>
+                            Lunch Time: 1-2pm
+                            <br><br>
+                            Sunday: Holiday
+                        </p>
+                    </div>
+                    <div class="mailing">
+                        <h4>Mailing Address</h4>
+                        <p class="wk">
+                            Email: kcs@gmail.com
+                        </p>
+                    </div>
+                    <div class="telephone">
+                        <h4>Telephone Banking</h4>
+                        <p class="wk">
+                            Phone: 080-5346-8976            
+                        </p>
+                        
+                    </div>
+                    <h5>For any queries visit,</h5>
+                    <div>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+
+                    </div>
+                    
+                </footer>
+
+            
+       
+    </section>
+</body>
+</html>
